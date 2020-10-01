@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6cb595c549.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+  </head>
+
+  <body>
+
+</html>
+<div class="container">
+  <H1>What's the weather?</H1>
+  <form id="searchForm">
+    <input type="input" placeholder="Enter City" id="cityInput">
+    <input type="submit" value="Search" id="searchCity">
+  </form>
+  <form id="searchLocationForm">
+        <input type="submit" value="Current location" id="searchLocation">
+  </form>
+  <hr>
+  <div class="row">
+    <div class="col-sm">
+      <h3 id="searchResult"> Edinburgh</h3>
+        <p id="dayDate">Sunday, 2 Aug 2020</p>
+        <p id="time">19:00pm</p>
+   
+    </div>
+    <div class="col-sm">
+    <p id="currentIcon" ><i class="fas fa-cloud-sun"></i></p>
+    <p id="weather"> Clear Sky</p>
+    <p id="temp">16ºC</p>
+    </div>
+    <div class="col-sm">
+      <p id="minMax" >Min: 8ºC Max: 18ºC</p>
+      <p id="feelsLike">Feels like 2ºC</p>
+      <p id="humidity">Humidity 59% </p>
+    </div>
+  </div>
+
+  <p id="signature">Designed by Naomi Keessen</p>
+  <script src="script.js"></script>
+</div>
+</body>

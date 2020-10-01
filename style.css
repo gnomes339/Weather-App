@@ -1,0 +1,48 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  color: #aaaaaa;
+}
+
+#searchCity {
+  margin: 0 auto;
+  background: #32e0c4;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid #aacfcf;
+  box-shadow: 1px 1px 1px #d5d5d5;
+}
+
+#searchLocation {
+  margin: 0 auto;
+  background: #0e7378;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid #aacfcf;
+  box-shadow: 1px 1px 1px #d5d5d5;
+}
+
+h3 {
+  color: black;
+}
+
+#currentIcon {
+  margin: 0 auto;
+  font-size: 30px;
+  color: #ffc7c7;
+}
+
+#dayDate {
+  font-size: 15px;
+}
+
+#signature {
+  font-size: smaller;
+  color: #f9c0c0;
+}
