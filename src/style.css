@@ -1,3 +1,11 @@
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   text-align: center;
@@ -40,6 +48,16 @@ h3 {
 
 #dayDate {
   font-size: 15px;
+}
+
+#weather {
+  margin: 0;
+  padding: 0;
+}
+
+#temp {
+  margin: 0;
+  padding: 11px;
 }
 
 #signature {
