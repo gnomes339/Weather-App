@@ -82,6 +82,14 @@ function showTemperature(response) {
   let humidity = Math.round(response.data.main.humidity);
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = `Humidity: ${humidity}% `;
+
+  let windSpeed = response.data.wind.speed;
+  let windSpeedElement = document.querySelector("#windSpeed");
+  windSpeedElement.innerHTML = `Wind Speed: ${windSpeed}m/s`;
+
+  let cloudiness = response.data.clouds.all;
+  let clouidnessElement = document.querySelector("#cloudiness");
+  clouidnessElement.innerHTML = `Cloud cover: ${cloudiness}%`;
 }
 
 function retrievePosition(position) {
@@ -103,24 +111,5 @@ function showTemperatureLocation(response) {
   let newCity = document.querySelector("#searchResult");
   newCity.innerHTML = `${cityLocation}`;
 
-  let temperature = Math.round(response.data.main.temp);
-  let temperatureElement = document.querySelector("#temp");
-  temperatureElement.innerHTML = `${temperature}℃`;
-
-  let weather = response.data.weather[0].main;
-  let weatherElement = document.querySelector("#weather");
-  weatherElement.innerHTML = `${weather}`;
-
-  let feelsLike = Math.round(response.data.main.feels_like);
-  let feelsLikeElement = document.querySelector("#feelsLike");
-  feelsLikeElement.innerHTML = `Feels like: ${feelsLike}℃ `;
-
-  let minTemperature = Math.round(response.data.main.temp_min);
-  let maxTemperature = Math.round(response.data.main.temp_max);
-  let minMaxTemperatureElement = document.querySelector("#minMax");
-  minMaxTemperatureElement.innerHTML = `Min: ${minTemperature}℃ Max: ${maxTemperature}℃`;
-
-  let humidity = Math.round(response.data.main.humidity);
-  let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = `Humidity: ${humidity}% `;
+  showTemperature(response);
 }
