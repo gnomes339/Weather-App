@@ -15,6 +15,7 @@
   <body>
 
 </html>
+<div class="weather-app">
 <div class="container">
   <H1>What's the weather?</H1>
   <form id="searchForm">
@@ -26,25 +27,32 @@
   </form>
   <hr>
   <div class="row">
-    <div class="col-sm">
-      <h3 id="searchResult"> Edinburgh</h3>
-        <p id="dayDate">Sunday, 2 Aug 2020</p>
-        <p id="time">19:00pm</p>
-   
-    </div>
-    <div class="col-sm">
-    <p id="currentIcon" ><i class="fas fa-cloud-sun"></i></p>
-    <p id="weather"> Clear Sky</p>
-    <p id="temp">16ºC</p>
-    </div>
-    <div class="col-sm">
-      <p id="minMax" >Min: 8ºC Max: 18ºC</p>
-      <p id="feelsLike">Feels like 2ºC</p>
-      <p id="humidity">Humidity 59% </p>
+    <div class="col">
+    <h3 id="searchResult"> Edinburgh</h3>
+    <p id="dayDate">Sunday, 2 Aug 2020</p>
+      <p id="time">19:00pm</p>
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-sm">
+            <p id="temp">16ºC</p>
+            <p id="feelsLike">Feels like 2ºC</p>
+            <p id="minMax">Min: 8ºC Max: 18ºC</p>
+    </div>
+    <div class="col-sm">
+    <p id="currentIcon" ><img src="src/Weathericon.png" alt="weather icon"> </p>
+    <p id="weather"> Clear Sky</p>
+    </div>
+    <div class="col-sm">
+      <p id="humidity">Humidity 59% </p>
+      <p id="precipitation"> Precipitation: No </p>
+      <p id="windSpeed">Wind Speed: 90kmph</p>
+    </div>
+ 
+  </div>
+</div>
+</div>
   <p id="signature">Designed by Naomi Keessen</p>
   <script src="src/script.js"></script>
-</div>
 </body>

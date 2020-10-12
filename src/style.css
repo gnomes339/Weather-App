@@ -6,6 +6,13 @@
   border-radius: 5px;
 }
 
+h1 {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px #aaaaaa;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   text-align: center;
@@ -41,23 +48,27 @@ h3 {
 }
 
 #currentIcon {
-  margin: 0 auto;
-  font-size: 30px;
+  font-size: 55px;
+  margin: 0;
+  padding: 5px;
+  line-height: normal;
   color: #ffc7c7;
 }
 
 #dayDate {
   font-size: 15px;
-}
-
-#weather {
   margin: 0;
   padding: 0;
 }
 
+#time {
+  line-height: normal;
+}
+
 #temp {
+  font-size: 25px;
   margin: 0;
-  padding: 11px;
+  padding: 0;
 }
 
 #signature {
