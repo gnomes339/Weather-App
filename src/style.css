@@ -9,8 +9,8 @@
 h1 {
   font-family: "PT Sans", sans-serif;
   text-align: center;
-  color: black;
-  text-shadow: 1px 1px #aaaaaa;
+  color: #3b2e5a;
+  text-shadow: 1px 1px #b6b3b3;
 }
 
 body {
@@ -21,19 +21,7 @@ body {
 
 #searchCity {
   margin: 0 auto;
-  background: #32e0c4;
-  color: #ffffff;
-  font-size: 15px;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  padding: 8px;
-  border-radius: 50px;
-  border: 1px solid #aacfcf;
-  box-shadow: 1px 1px 1px #d5d5d5;
-}
-
-#searchLocation {
-  margin: 0 auto;
-  background: #0e7378;
+  background: #394989;
   color: #ffffff;
   font-size: 15px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -44,7 +32,7 @@ body {
 }
 
 h3 {
-  color: black;
+  color: #3b2e5a;
 }
 
 #dayDate {
@@ -68,7 +56,15 @@ h3 {
   font-size: 10px;
 }
 
+#celsiusLink {
+  color: #4ea0ae;
+}
+
+#fahrenheitLink {
+  color: #4ea0ae;
+}
+
 #signature {
   font-size: 15px;
-  color: #f9c0c0;
+  color: #f7dad9;
 }
