@@ -22,9 +22,6 @@
     <input type="input" placeholder="Enter City" id="cityInput">
     <input type="submit" value="Search" id="searchCity">
   </form>
-  <form id="searchLocationForm">
-        <input type="submit" value="Current location" id="searchLocation">
-  </form>
   <hr>
   <div class="row">
     <div class="col">
@@ -41,18 +38,17 @@
             <p id="minMax">Min:  Max:</p>
     </div>
     <div class="col-sm">
-    <p class="weatherIcon"><img id="icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon"> </p>
+    <p class="weatherIcon"><img id="icon" src="http://openweathermap.org/img/wn/03n.png" alt="weather icon"> </p>
     <p id="weather"> </p>
     </div>
     <div class="col-sm">
       <p id="humidity">Humidity: </p>
       <p id="windSpeed">Wind Speed: </p>
       <p id="cloudiness"> Cloud cover:</p>
-
     </div>
- 
   </div>
 </div>
+<p class="units" > <a href="#" id="celsiusLink"> Switch to ℃ </a> | <a href="#" id="fahrenheitLink">Switch to ℉</a></p>
 </div>
   <p id="signature">Designed by Naomi Keessen</p>
   <script src="src/script.js"></script>

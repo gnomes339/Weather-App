@@ -63,7 +63,12 @@ h3 {
   padding: 0;
 }
 
+.units {
+  text-align: Center;
+  font-size: 10px;
+}
+
 #signature {
-  font-size: smaller;
+  font-size: 15px;
   color: #f9c0c0;
 }
