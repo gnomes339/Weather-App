@@ -49,18 +49,10 @@ function search(event) {
   let units = "metric";
   let city = document.querySelector("#cityInput").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(showTemperature);
+  axios.get(apiUrl).then(showSearchTemperature);
 }
 
-let currentTemp = document.querySelector("#searchForm");
-currentTemp.addEventListener("submit", search);
-
-function showTemperature(response) {
-  console.log(response);
-
-  let cityInput = document.querySelector("#cityInput");
-  let newCity = document.querySelector("#searchResult");
-  newCity.innerHTML = cityInput.value;
+function showTemperatureElements(response) {
 
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#temp");
@@ -90,6 +82,20 @@ function showTemperature(response) {
   let cloudiness = response.data.clouds.all;
   let clouidnessElement = document.querySelector("#cloudiness");
   clouidnessElement.innerHTML = `Cloud cover: ${cloudiness}%`;
+
+}
+
+let currentTemp = document.querySelector("#searchForm");
+currentTemp.addEventListener("submit", search);
+
+function showSearchTemperature(response) {
+  console.log(response);
+
+  let cityInput = document.querySelector("#cityInput");
+  let newCity = document.querySelector("#searchResult");
+  newCity.innerHTML = cityInput.value;
+
+  showTemperatureElements(response)
 }
 
 function retrievePosition(position) {
@@ -111,5 +117,6 @@ function showTemperatureLocation(response) {
   let newCity = document.querySelector("#searchResult");
   newCity.innerHTML = `${cityLocation}`;
 
-  showTemperature(response);
+  showTemperatureElements(response) 
+
 }
