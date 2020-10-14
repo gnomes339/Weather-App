@@ -80,7 +80,7 @@ function showSearchTemperature(response) {
   clouidnessElement.innerHTML = `Cloud cover: ${cloudiness}%`;
 
   let iconElement = document.querySelector("#icon"); 
-  iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`);
+  iconElement.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`);
 }
 
 function search(event) {
